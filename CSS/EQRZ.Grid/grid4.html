@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superposición con Grid Template Areas y Z-index</title>
+  <style>
+    .magazine-cover {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas:
+        "img img img img img img"
+        "img img img img img img"
+        "img img title title img img"
+        "img img subtitle subtitle img img"
+        "img img date date img img"
+        "img img img img img img";
+      margin: 0 auto;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .background-image {
+      grid-area: img;
+      background-position: center;
+      z-index: 1
+    }
+
+    .title {
+      grid-area: title;
+      z-index: 2;
+      font-weight: 800;
+      color: firebrick;
+      text-align: center;
+    }
+
+    .subtitle {
+      grid-area: subtitle;
+      z-index: 2;
+      color: white;
+      text-align: center;
+      padding: 10px 30px;
+    }
+
+    .date {
+      grid-area: date;
+      z-index: 2;
+      font-weight: 300;
+      color: greenyellow;
+      text-align: center;
+      padding: 5px 15px;
+      margin: 15px auto;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center; margin-bottom: 30px;">ALOE vEra</h1>
+  
+  <div class="magazine-cover">
+    <div class="background-image"></div>
+    <h1 class="title">Grid 4</h1>
+    <h2 class="subtitle">HOLA Caracola</h2>
+    <div class="date">Febrero 2025</div>
+    <div class="corner-decoration">DESTACADO</div>
+  </div>
+
+  <p style="text-align: center; margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+    Este ejemplo muestra cómo se puede utilizar <code>grid-template-areas</code> para posicionar elementos en una cuadrícula
+    y <code>z-index</code> para controlar la superposición.
+  </p>
+</body>
+</html>

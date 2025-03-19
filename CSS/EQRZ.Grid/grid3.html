@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+        }
+        
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          grid-auto-flow: dense;
+          gap: 15px;
+          padding: 15px;
+          background-color:black;
+        }
+        
+        .item {
+          background-color: gold;
+          color: white;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+        }
+        
+        .a {
+          grid-column: span 2;
+          background-color: tomato;
+        }
+        
+        .b {
+          grid-row: span 2;
+          background-color: lime;
+        }
+        
+        .c {
+          grid-column: span 2;
+          grid-row: span 2;
+          background-color: navy;
+        }
+      </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item a">2 (ancho)</div>
+        <div class="item">3</div>
+        <div class="item b">4 (alto)</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item c">7 (grande)</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item a">10 (ancho)</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item b">14 (alto)</div>
+        <div class="item">15</div>
+        <div class="item a">16 (ancho)</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+</body>
+</html>

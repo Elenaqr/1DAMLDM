@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+        /* Rojo en 2, 4, 7 */
+        ul li:nth-child(2),
+        ul li:nth-child(4),
+        ul li:nth-child(7) {
+            color: red; 
+        }
+
+        /* Tamaño más grande del ultimo */
+        ul li:last-child {
+            font-size: 3em; 
+        }
+
+        /*Mayúsculas y verde en 1, 3, 8*/
+        ul li:nth-child(1),
+        ul li:nth-child(3),
+        ul li:nth-child(8) {
+            color: green; 
+            text-transform: uppercase; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista de asignaturas.</h2>
+    <ul>
+        <li>Matemáticas.</li>
+        <li>Química.</li>
+        <li>Historia de España.</li>
+        <li>Filosofía.</li>
+        <li>Biología.</li>
+        <li>Lengua.</li>
+        <li>Inglés.</li>
+        <li>Educación Física.</li>
+        <li>Desarrollo e Investigación.</li>
+        <li>Tecnología.</li>
+    </ul>
+</body>
+</html>

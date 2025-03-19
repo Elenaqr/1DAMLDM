@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Responsive con Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .grid-item {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .cosa {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grid 5</h1>
+  
+  <div class="grid-container">
+    <div class="grid-item cosa">
+      <img src="img.png" alt="Imagen destacada">
+      <h3>COSAS1</h3>
+      <p>Cositas.</p>
+    </div>
+    
+    <div class="grid-item">
+      <img src="img.png" alt="Imagen">
+      <h3>Cosas2</h3>
+      <p>cositas2.</p>
+    </div>
+    
+    <div class="grid-item">
+      <img src="perro.png" alt="Imagen">
+      <h3>CosAS3</h3>
+      <p>COSItitititas3.</p>
+    </div>
+    
+    <div class="grid-item">
+      <img src="perro.png" alt="Imagen">
+      <h3>CosAS4</h3>
+      <p>Espacio.</p>
+    </div>
+    
+    <div class="grid-item">
+      <img src="img.png" alt="Imagen">
+      <h3>CosaS5</h3>
+      <p>COSISISsisisititittatats5.</p>
+    </div>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: aquamarine;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+nav {
+    background-color: green;
+    padding: 10px ;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.img {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.precio {
+    background-color: rgb(212, 201, 201);
+}
+.precio img {
+    margin: 0 40px; /* Ajusta el valor según la separación deseada */
+}
+
+.cosas {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: aquamarine;
+}
+
+.comprar, .quienes, .contactar {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+   
+}
+footer {
+    background-color: rgb(212, 201, 201);
+    text-align: right;
+    padding: 10px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        h2 {
+            color:darkblue;
+        }
+        nav {
+            background-color: gainsboro;
+            padding: 1px;
+        }
+        section {
+            margin: 15px ;
+            padding: 30px;
+            background-color: gainsboro;
+        } 
+        .precio {
+            color:darkslateblue;
+            float: right;
+        }
+        .descripcion {
+            font-style: italic;
+            color:gray;
+            font-size: 1em;
+        }
+
+        /*Color amarillo al seleccionar la descripción*/
+        .descripcion::selection {
+            background-color: yellow;
+            color: black;
+        }
+        
+        /* visitado */
+        nav a:visited {
+            color:darkred;
+        }
+        
+        /* encima */
+        nav a:hover {
+            background-color: black;
+            color: white;
+        }
+        /* clic */
+        nav a:active {
+            background-color: red;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESTAURANTE QIN</h1> 
+    <nav>
+        <ul>
+            <li><a href="#Entradas">Entrada</a></li>
+            <li><a href="#Platos">Plato Principal</a></li>
+            <li><a href="#Postres">Postre</a></li>
+        </ul>
+    </nav>
+    
+    <section id="Entradas">
+        <h2>Entrada</h2>
+        <div>
+            <span class="nombre">Gyozas de Cerdo</span>
+            <span class="precio">8.50 €</span>
+            <p class="descripcion">Empanadillas hechas al vapor rellenas de cerdo y verduras, servidas con salsa de soja.</p>
+        </div>
+        <div>
+            <span class="nombre">Pan con Tomate</span>
+            <span class="precio">5.00 €</span>
+            <p class="descripcion">Tostadas de pan con tomate rallado, aceite de oliva y sal.</p>
+        </div>
+        <div>
+            <span class="nombre">Tortilla Española</span>
+            <span class="precio">6.50 €</span>
+            <p class="descripcion">Tortilla de patatas con cebolla.</p>
+        </div>
+    </section>
+    
+    <section id="Platos">
+        <h2>Platos Principal</h2>
+        <div>
+            <span class="nombre">Pollo Asado</span>
+            <span class="precio">16.00 €</span>
+            <p class="descripcion">Pollo de corral y patatas fritas.</p>
+        </div>
+        <div>
+            <span class="nombre">Pulpo a la Gallega</span>
+            <span class="precio">18.50 €</span>
+            <p class="descripcion">Pulpo con pimentón de la Vera, aceite de oliva y patatas cocidas.</p>
+        </div>
+        <div>
+            <span class="nombre">Cochinillo Asado</span>
+            <span class="precio">22.00 €</span>
+            <p class="descripcion">Cochinillo al horno, crujiente por fuera y tierno por dentro.</p>
+        </div>
+    </section>
+    
+    <section id="Postre">
+        <h2>Postres</h2>
+        <div>
+            <span class="nombre">Helado</span>
+            <span class="precio">3.00 €</span>
+            <p class="descripcion">Helados de chocolate, nata, vainilla y fresa.</p>
+        </div>
+        <div>
+            <span class="nombre">Churros con Chocolate</span>
+            <span class="precio">5.50 €</span>
+            <p class="descripcion">Churros servidos con chocolate caliente espeso.</p>
+        </div>
+    </section>
+    
+</body>
+</html>

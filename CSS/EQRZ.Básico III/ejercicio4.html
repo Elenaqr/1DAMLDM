@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        nav {
+            background-color: gainsboro;
+            padding: 1px;
+        }
+        section {
+            margin: 15px ;
+            padding: 20px;
+            background-color: gainsboro;
+        } 
+        h2 {
+            color:darkblue;
+        }
+        .precio {
+            color:darkslateblue;
+            float: right;
+        }
+        .descripcion {
+            font-style: italic;
+            color:gray;
+            font-size: 1em;
+        }
+        
+        /* visitado */
+        nav a:visited {
+            color:darkred;
+        }
+        
+        /* encima */
+        nav a:hover {
+            background-color: black;
+            color: white;
+        }
+        /* clic */
+        nav a:active {
+            background-color: red;
+            color: green;
+        }
+
+        .tercero::first-line,
+        .cuarto::first-line {
+            font-style: italic;
+        }
+        .segundo::first-letter {
+            color: red;
+        }
+        ::selection {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tecnología Qin</h1> 
+    <nav>
+        <ul>
+            <li><a href="#Telefono">Teléfonos</a></li>
+            <li><a href="#Tablet">Tablets</a></li>
+            <li><a href="#Reloj">Relojes</a></li>
+        </ul>
+    </nav>
+    
+    <section id="Telefono">
+        <h2>Teléfonos</h2>
+        <div class="item1">
+            <span class="iPhone">iPhone 16</span>
+            <span class="precio">959€</span>
+            <p class="descripcion">Pantalla OLED Super Retina de 6.1 pulgadas y está potenciado por el procesador Apple A18. Su cámara trasera es dual, 
+            con un sensor principal de 48MP con OIS y una cámara ultrawide de 12MP, completando las opciones de fotografía con una cámara selfie de 12MP. 
+            El iPhone 16 soporta carga inalámbrica para su batería de 3561 mAh, tiene parlantes stereo, Face ID, resistencia al polvo y agua y corre iOS 18.</p>
+        </div>
+        <div class="item2">
+            <span class="Samsung">Samsung S25</span>
+            <span class="precio">909€</span>
+            <p class="descripcion">Pantalla Dynamic AMOLED 2X de 6.2 pulgadas con resolución FHD+ y tasa de refresco de 120Hz. Potenciado por un procesador Snapdragon 8 Elite for Galaxy, 
+            el Galaxy S25 ahora tiene una única variante con 12GB de RAM y opciones de 128GB, 256GB y 512GB de almacenamiento. La cámara triple se repite este año, 
+            con un sensor principal de 50MP, un lente ultrawide de 12MP y una cámara telefoto de 10MP con zoom 3x y la cámara frontal es de 12MP. 
+            El Galaxy S25 se alimenta de una batería de 4000 mAh con soporte para carga rápida, y completa sus características con parlantes stereo, 
+            lector de huellas bajo la pantalla, protección contra polvo y agua y Android 15.</p>
+        </div>
+    </section>
+    
+    <section id="Tablet">
+        <h2>Tablets</h2>
+        <div class="1">
+            <span class="iPad">iPad Pro 11</span>
+            <span class="precio">1.199€</span>
+            <p class="descripcion">Pantalla OLED Ultra Retina de 11 pulgadas con tasa de refresco de 120Hz y el chip Apple M4 con hasta 1TB de almacenamiento. 
+            La cámara principal de 12MP está acompañada de un sensor ToF y la cámara selfie es de 12MP. El iPad Pro 11 cuenta con Face ID, cuatro parlantes stereo, 
+            y soporte para stylus.</p>
+        </div>
+        <div class="2">
+            <span class="Samsung">Galaxy Tab S10+</span>
+            <span class="precio">1.119€</span>
+            <p class="descripcion">Pantalla AMOLED de 12.4 pulgadas y tasa de refresco de 120Hz, procesador Dimensity 9300+ con 12GB de RAM y hasta 512GB de almacenamiento, 
+            cámara dual de 13MP + 8MP, parlantes stereo, batería de 10.090 mAh y lector de huellas bajo pantalla.</p>
+        </div>
+    </section>
+    
+    <section id="Reloj">
+        <h2>Relojes</h2>
+        <div class="1">
+            <span class="nombre">Watch Ultra 2</span>
+            <span class="precio">899€</span>
+        </div>
+        <div class="2">
+            <span class="nombre">Galaxy Watch Ultra LTE</span>
+            <span class="precio">699€</span>
+        </div>
+    </section>
+
+
+    <h1>CSS Básico III</h1>
+    
+    <div>
+        <p>CSS está diseñado principalmente para marcar la separación del contenido del documento y la forma de presentación de este, características tales como las capas o layouts, los colores y las fuentes.</p>
+        
+        <p class="segundo">Esta separación busca mejorar la accesibilidad del documento, proveer más flexibilidad y control en la especificación de características presentacionales, permitir que varios documentos HTML compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css, y reducir la complejidad y la repetición de código en la estructura del documento.</p>
+        
+        <p class="tercero">La separación del formato y el contenido hace posible presentar el mismo documento marcado en diferentes estilos para diferentes métodos de renderizado, como en pantalla, en impresión, en voz (mediante un navegador de voz o un lector de pantalla), y dispositivos táctiles basados en el sistema Braille.</p>
+        
+        <p class="cuarto">También se puede mostrar una página web de manera diferente dependiendo del tamaño de la pantalla o tipo de dispositivo. Los lectores pueden especificar una hoja de estilos diferente, como una hoja de estilos CSS guardado en su computadora, para sobreescribir la hoja de estilos del diseñador.</p>
+    </div>
+    
+</body>
+</html>
