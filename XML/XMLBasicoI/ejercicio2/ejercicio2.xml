@@ -1,24 +1,31 @@
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 2
+Cambio: Se agregó la documentación necesaria
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <hechos_historicos>
-    <hecho descripcion="IBM da a conocer el PC.">
+    <hecho descripcion="IBM da a conocer el PC."> <!-- Hecho histórico -->
         <fecha>
-            <dia>12</dia>
-            <mes>8</mes>
-            <año>1981</año>
+            <dia>12</dia> <!-- Día del evento -->
+            <mes>8</mes> <!-- Mes del evento -->
+            <año>1981</año> <!-- Año del evento -->
         </fecha>
     </hecho>
-    <hecho descripcion="Se funda Google.">
+    <hecho descripcion="Se funda Google."> <!-- Hecho histórico -->
         <fecha>
-            <dia>4</dia>
-            <mes>9</mes>
-            <año>1998</año>
+            <dia>4</dia> <!-- Día del evento -->
+            <mes>9</mes> <!-- Mes del evento -->
+            <año>1998</año> <!-- Año del evento -->
         </fecha>
     </hecho>
-    <hecho descripcion="Se funda Facebook.">
+    <hecho descripcion="Se funda Facebook."> <!-- Hecho histórico -->
         <fecha>
-            <dia>4</dia>
-            <mes>2</mes>
-            <año>2004</año>
+            <dia>4</dia> <!-- Día del evento -->
+            <mes>2</mes> <!-- Mes del evento -->
+            <año>2004</año> <!-- Año del evento -->
         </fecha>
     </hecho>
 </hechos_historicos>

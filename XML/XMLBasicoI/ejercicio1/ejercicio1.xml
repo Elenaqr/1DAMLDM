@@ -1,15 +1,22 @@
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 1
+Cambio: Se agregó la documentación necesaria
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <ciudades>
-    <ciudad continente="Asia">
-        <nombre>Nueva Delhi</nombre>
-        <pais>India</pais>
+    <ciudad continente="Asia"> <!-- Una ciudad que se encuentra en el continente asiático -->
+        <nombre>Nueva Delhi</nombre> <!-- Nombre de la ciudad -->
+        <pais>India</pais> <!-- País al que pertenece la ciudad -->
     </ciudad>
-    <ciudad continente="Europa">
-        <nombre>Lisboa</nombre>
-        <pais>Portugal</pais>
+    <ciudad continente="Europa"> <!-- Una ciudad que se encuentra en el continente europeo -->
+        <nombre>Lisboa</nombre> <!-- Nombre de la ciudad -->
+        <pais>Portugal</pais> <!-- País al que pertenece la ciudad -->
     </ciudad>
-    <ciudad continente="África">
-        <nombre>El Cairo</nombre>
-        <pais>Egipto</pais>
+    <ciudad continente="África"> <!-- Una ciudad que se encuentra en el continente africano -->
+        <nombre>El Cairo</nombre> <!-- Nombre de la ciudad -->
+        <pais>Egipto</pais> <!-- País al que pertenece la ciudad -->
     </ciudad>
 </ciudades>
