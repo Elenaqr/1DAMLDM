@@ -1,24 +1,31 @@
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 4
+Cambio: Se agregó la documentación necesaria
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <empleados>
-    <empleado>
-        <nombre>Ana</nombre>
-        <apellido>García</apellido>
-        <edad>30</edad>
-        <departamento>Ventas</departamento>
-        <cargo>Ejecutivo de ventas</cargo>
+    <empleado> <!-- Información del empleado -->
+        <nombre>Ana</nombre> <!-- Nombre del empleado -->
+        <apellido>García</apellido> <!-- Nombre del empleado -->
+        <edad>30</edad> <!-- Nombre del empleado -->
+        <departamento>Ventas</departamento> <!-- Departamento que trabaja -->
+        <cargo>Ejecutivo de ventas</cargo> <!-- Cargo que realiza -->
     </empleado>
-    <empleado>
-        <nombre>Luis</nombre>
-        <apellido>Rodríguez</apellido>
-        <edad>45</edad>
-        <departamento>Finanzas</departamento>
-        <cargo>Analista financiero</cargo>
+    <empleado> <!-- Información del empleado -->
+        <nombre>Luis</nombre> <!-- Nombre del empleado -->
+        <apellido>Rodríguez</apellido> <!-- Nombre del empleado -->
+        <edad>45</edad> <!-- Nombre del empleado -->
+        <departamento>Finanzas</departamento> <!-- Departamento que trabaja -->
+        <cargo>Analista financiero</cargo> <!-- Cargo que realiza -->
     </empleado>
-    <empleado>
-        <nombre>María</nombre>
-        <apellido>López</apellido>
-        <edad>28</edad>
-        <departamento>Marketing</departamento>
-        <cargo>Especialista en redes sociales</cargo>
+    <empleado> <!-- Información del empleado -->
+        <nombre>María</nombre> <!-- Nombre del empleado -->
+        <apellido>López</apellido> <!-- Nombre del empleado -->
+        <edad>28</edad> <!-- Nombre del empleado -->
+        <departamento>Marketing</departamento> <!-- Departamento que trabaja -->
+        <cargo>Especialista en redes sociales</cargo> <!-- Cargo que realiza -->
     </empleado>
 </empleados>
