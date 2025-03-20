@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--
 Nombre: Elena Qin Real Zhang
 Curso: 1DAM
@@ -5,7 +7,7 @@ Fecha: 18/03/2025
 Ejercicio: Ejercicio 4
 Cambio: Se agregó la documentación necesaria
 -->
-<?xml version="1.0" encoding="UTF-8"?>
+
 <empleados>
     <empleado> <!-- Información del empleado -->
         <nombre>Ana</nombre> <!-- Nombre del empleado -->
