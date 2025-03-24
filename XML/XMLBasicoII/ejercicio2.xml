@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 1
+Cambio: Se agregó la documentación necesaria
+-->
+
+<equipos>
+    <equipo>
+        <nombre>FC Barcelona</nombre>
+        <ciudad>Barcelona</ciudad>
+        <jugador posicion="delantero">
+            <nombre>Robert Lewandowski</nombre>
+            <nacionalidad>Polonia</nacionalidad>
+        </jugador>
+        <jugador posicion="mediocampista">
+            <nombre>Frenkie de Jong</nombre>
+            <nacionalidad>Países Bajos</nacionalidad>
+        </jugador>
+    </equipo>
+    <equipo>
+        <nombre>Real Madrid</nombre>
+        <ciudad>Madrid</ciudad>
+        <jugador posicion="portero">
+            <nombre>Thibaut Courtois</nombre>
+            <nacionalidad>Bélgica</nacionalidad>
+        </jugador>
+        <jugador posicion="defensa">
+            <nombre>David Alaba</nombre>
+            <nacionalidad>Austria</nacionalidad>
+        </jugador>
+    </equipo>
+</equipos>

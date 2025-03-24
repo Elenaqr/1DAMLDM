@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 1
+Cambio: Se agregó la documentación necesaria
+-->
+
+<marcadores>
+    <pagina>
+        <nombre>W3Schools</nombre>
+        <descripcion>Tutoriales de informática.</descripcion>
+        <url>https://www.w3schools.com/</url>
+    </pagina>
+    <pagina>
+        <nombre>Wikipedia</nombre>
+        <descripcion>La enciclopedia libre.</descripcion>
+        <url>http://www.wikipedia.org/</url>
+    </pagina>
+    <pagina>
+        <nombre>W3C</nombre>
+        <descripcion>World Wide Web Consortium.</descripcion>
+        <url>http://www.w3.org/</url>
+    </pagina>
+</marcadores>
