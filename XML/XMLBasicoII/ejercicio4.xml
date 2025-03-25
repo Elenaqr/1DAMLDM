@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 4
+Cambio: Se agregó la documentación necesaria
+-->
+
+<modulo>
+    <nombre>Lenguajes de Marcas</nombre>
+    <horas_semanales>4</horas_semanales>
+    <caracter obligatorio="true"/>
+    <fecha_inicio>2023-09-15</fecha_inicio>
+    <fecha_fin>2024-06-22</fecha_fin>
+    <alumnos>
+        <alumno>
+            <nombre>Ana Fernández Gutiérrez</nombre>
+            <dni>51623487V</dni>
+            <telefono>666544566</telefono>
+            <email>anafernandez@gmail.com</email>
+            <direccion>C/ Amatista, 14, 28905 Getafe (Madrid)</direccion>
+            <faltas_asistencia>0</faltas_asistencia>
+            <nota/>
+        </alumno>
+        <alumno>
+            <nombre>Carlos López Sánchez</nombre>
+            <dni>52369874B</dni>
+            <telefono>666455477</telefono>
+            <email>carloslopez@gmail.com</email>
+            <direccion>C/ Ópalo, 15, 28905 Getafe (Madrid)</direccion>
+            <faltas_asistencia>0</faltas_asistencia>
+            <nota>apto</nota>
+        </alumno>
+    </alumnos>
+</modulo>

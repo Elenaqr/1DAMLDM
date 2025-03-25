@@ -1,0 +1,28 @@
+Ejercicio 1
+
+Objetivo
+Sin utilizar atributos, rear un documento XML bien formado que describa una lista de marcadores web. 
+
+Incluir información de tres sitios web:
+
+W3Schools
+Wikipedia
+W3C
+
+
+Datos
+
+W3Schools
+Descripción: Tutoriales de informática
+URL: https://www.w3schools.com/
+
+
+Wikipedia
+Descripción: La enciclopedia libre
+URL: http://www.wikipedia.org/
+
+
+W3C
+Descripción: World Wide Web Consortium
+URL: http://www.w3.org/
+
