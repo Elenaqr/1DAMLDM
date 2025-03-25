@@ -4,7 +4,7 @@
 Nombre: Elena Qin Real Zhang
 Curso: 1DAM
 Fecha: 18/03/2025
-Ejercicio: Ejercicio 1
+Ejercicio: Ejercicio 2
 Cambio: Se agregó la documentación necesaria
 -->
 
@@ -25,8 +25,8 @@ Cambio: Se agregó la documentación necesaria
         <nombre>Real Madrid</nombre>
         <ciudad>Madrid</ciudad>
         <jugador posicion="Portero">
-            <nombre>Thibaut Courtois</nombre>
-            <nacionalidad>Bélgica</nacionalidad>
+            <nombre>Sergio Mestre</nombre>
+            <nacionalidad>Española</nacionalidad>
         </jugador>
         <jugador posicion="Defensa">
             <nombre>Fran García</nombre>
