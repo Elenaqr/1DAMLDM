@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 27/03/2025
+Ejercicio: Ejercicio 1
+Cambio: Se agregó la documentación necesaria
+-->
+
 <catalogo xmlns:os="http://www.ejemplo.com/os" xmlns:office="http://www.ejemplo.com/office">
-    <os:software>
+    <os:software> <!-- Sección de software sistemas operativos -->
         <os:programa>
             <os:nombre>Windows 10</os:nombre>
             <os:version>10.0</os:version>
@@ -20,7 +29,7 @@
             <os:url>https://www.apple.com/macos</os:url>
         </os:programa>
     </os:software>
-    <office:software>
+    <office:software> <!-- Sección de software aplicaciones de oficina -->
         <office:programa>
             <office:nombre>Microsoft PowerPoint</office:nombre>
             <office:version>2021</office:version>
