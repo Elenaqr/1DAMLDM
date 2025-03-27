@@ -5,14 +5,14 @@ Crear un documento XML bien formado que describa una lista de marcadores web sin
 - Descripción breve
 - URL
 
-## Requisitos
+Requisitos
 - Asegurar que el documento XML esté bien formado
 - Incluir información de tres sitios web:
   1. W3Schools
   2. Wikipedia
   3. W3C
 
-## Datos de Ejemplo
+Datos de Ejemplo
 - W3Schools
   - Descripción: Tutoriales de informática
   - URL: https://www.w3schools.com/
@@ -25,7 +25,7 @@ Crear un documento XML bien formado que describa una lista de marcadores web sin
   - Descripción: World Wide Web Consortium
   - URL: http://www.w3.org/
 
-## Resultados de Aprendizaje
+Resultados de Aprendizaje
 - Comprender la estructura de documentos XML
 - Crear elementos anidados
 - Representar datos jerárquicos sin atributos

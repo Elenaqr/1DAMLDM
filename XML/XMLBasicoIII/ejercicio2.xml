@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:book="http://example.com/namespace/book" xmlns:html="http://www.w3.org/1999/xhtml">
+    <html:head>
+        <html:title>Book Review</html:title>
+    </html:head>
+    <html:body>
+        <book:bookreview>
+            <book:title>Introducción a XML</book:title>
+            <html:table>
+                <html:tr html:align="center">
+                    <html:td>Author</html:td>
+                    <html:td>Price</html:td>
+                    <html:td>Pages</html:td>
+                    <html:td>Date</html:td>
+                </html:tr>
+                <html:tr html:align="left">
+                    <book:author>Simon St. Laurent</book:author>
+                    <book:price>31.98</book:price>
+                    <book:pages>352</book:pages>
+                    <book:date>1998/01</book:date>
+                </html:tr>
+            </html:table>
+        </book:bookreview>
+    </html:body>
+</html>

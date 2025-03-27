@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:os="http://www.ejemplo.com/os" xmlns:office="http://www.ejemplo.com/office">
+    <os:software>
+        <os:programa>
+            <os:nombre>Windows 10</os:nombre>
+            <os:version>10.0</os:version>
+            <os:desarrollador>Microsoft</os:desarrollador>
+            <os:url>https://www.microsoft.com/windows</os:url>
+        </os:programa>
+        <os:programa>
+            <os:nombre>Ubuntu 20.04</os:nombre>
+            <os:version>20.04</os:version>
+            <os:desarrollador>Canonical</os:desarrollador>
+            <os:url>https://ubuntu.com</os:url>
+        </os:programa>
+        <os:programa>
+            <os:nombre>macOS Sonoma</os:nombre>
+            <os:version>14.4</os:version>
+            <os:desarrollador>Apple</os:desarrollador>
+            <os:url>https://www.apple.com/macos</os:url>
+        </os:programa>
+    </os:software>
+    <office:software>
+        <office:programa>
+            <office:nombre>Microsoft Word</office:nombre>
+            <office:version>16.0</office:version>
+            <office:desarrollador>Microsoft</office:desarrollador>
+            <office:url>https://www.microsoft.com/word</office:url>
+        </office:programa>
+        <office:programa>
+            <office:nombre>LibreOffice Writer</office:nombre>
+            <office:version>7.1</office:version>
+            <office:desarrollador>The Document Foundation</office:desarrollador>
+            <office:url>https://www.libreoffice.org</office:url>
+        </office:programa>
+        <office:programa>
+            <office:nombre>Google Docs</office:nombre>
+            <office:version>Web</office:version>
+            <office:desarrollador>Google</office:desarrollador>
+            <office:url>https://docs.google.com</office:url>
+        </office:programa>
+    </office:software>
+</catalogo>
