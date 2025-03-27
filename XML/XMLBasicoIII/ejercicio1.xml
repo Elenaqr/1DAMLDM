@@ -22,16 +22,16 @@
     </os:software>
     <office:software>
         <office:programa>
-            <office:nombre>Microsoft Word</office:nombre>
-            <office:version>16.0</office:version>
+            <office:nombre>Microsoft PowerPoint</office:nombre>
+            <office:version>2021</office:version>
             <office:desarrollador>Microsoft</office:desarrollador>
-            <office:url>https://www.microsoft.com/word</office:url>
+            <office:url>https://www.microsoft.com/powerpoint</office:url>
         </office:programa>
         <office:programa>
-            <office:nombre>LibreOffice Writer</office:nombre>
-            <office:version>7.1</office:version>
-            <office:desarrollador>The Document Foundation</office:desarrollador>
-            <office:url>https://www.libreoffice.org</office:url>
+            <office:nombre>Microsoft Excel</office:nombre>
+            <office:version>2021</office:version>
+            <office:desarrollador>Microsoft</office:desarrollador>
+            <office:url>https://www.microsoft.com/excel</office:url>
         </office:programa>
         <office:programa>
             <office:nombre>Google Docs</office:nombre>
