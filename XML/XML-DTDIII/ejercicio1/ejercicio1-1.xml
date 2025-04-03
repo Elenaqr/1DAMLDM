@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuento SYSTEM "ejercicio1-1y1-2.dtd">
+<cuento cod="C1" titulo="El bosque encantado">
+    <personajes>
+        <personaje id="p1" tipo="principal">
+            <nombre>Juan</nombre>
+            <genero>M</genero>
+        </personaje>
+        <personaje id="p2" tipo="secundario">
+            <nombre>María</nombre>
+            <genero>F</genero>
+        </personaje>
+    </personajes>
+    <trama>Juan y María van a un lugar mágico con criaturas fantásticas.</trama>
+</cuento>
