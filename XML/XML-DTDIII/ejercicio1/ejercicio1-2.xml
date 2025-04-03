@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuento SYSTEM "Cuentos.dtd">
+<cuento cod="C2" titulo="La casa del terror">
+    <personajes>
+        <personaje id="p1" tipo="antagonista">
+            <nombre>El fantasma</nombre>
+            <genero>N</genero>
+        </personaje>
+        <personaje id="p2" tipo="principal">
+            <nombre>Pedro</nombre>
+            <genero>M</genero>
+        </personaje>
+    </personajes>
+    <trama>Pedro se enfrenta a un fantasma en una casa abandonada.</trama>
+</cuento>

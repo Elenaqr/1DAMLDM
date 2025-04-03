@@ -1,0 +1,17 @@
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 03/04/2025
+Ejercicio: Ejercicio 1
+Cambio: Se agregó la documentación necesaria
+-->
+<!ELEMENT cuento (personajes, trama)> <!-- El elemento raíz -->
+<!ELEMENT personajes (personaje+)> <!-- El elemento 'personajes' con 1 o más elementos 'personaje' -->
+<!ELEMENT personaje (nombre, genero)> <!--  nombre y género del personaje -->
+<!ELEMENT nombre (#PCDATA)> <!-- El nombre del personaje -->
+<!ELEMENT genero (#PCDATA)> <!-- El género del personaje-->
+<!ELEMENT trama (#PCDATA)> <!-- La trama del cuento -->
+<!ATTLIST cuento cod CDATA #REQUIRED> <!-- El atributo 'cod' del elemento 'cuento' es obligatorio -->
+<!ATTLIST cuento titulo CDATA #REQUIRED> <!-- El atributo 'titulo' del elemento 'cuento' es obligatorio -->
+<!ATTLIST personaje id ID #REQUIRED> <!-- El atributo 'id' del elemento 'personaje' -->
+<!ATTLIST personaje tipo (principal | secundario | antagonista) "principal"> <!-- El atributo 'tipo' del elemento 'personaje' puede ser:'principal', 'secundario', 'antagonista' -->
