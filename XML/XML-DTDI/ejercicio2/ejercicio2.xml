@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga_baloncesto [
+    <!ELEMENT liga_baloncesto (jugador*)>
+    <!ELEMENT jugador (nombre, apellidos, equipo, edad)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT equipo (ciudad, presidente)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT presidente (nombrePresidente, apellidosPresidente)>
+    <!ELEMENT nombrePresidente (#PCDATA)>
+    <!ELEMENT apellidosPresidente (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+]>
+<liga_baloncesto>
+    <jugador>
+        <nombre>LeBron</nombre>
+        <apellidos>James</apellidos>
+        <equipo>
+            <ciudad>Los Angeles</ciudad>
+            <presidente>
+                <nombrePresidente>Jeanie</nombrePresidente>
+                <apellidosPresidente>Buss</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>36</edad>
+    </jugador>
+    <jugador>
+        <nombre>Stephen</nombre>
+        <apellidos>Curry</apellidos>
+        <equipo>
+            <ciudad>San Francisco</ciudad>
+            <presidente>
+                <nombrePresidente>Joe</nombrePresidente>
+                <apellidosPresidente>Lake</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>33</edad>
+    </jugador>
+    <jugador>
+        <nombre>KD</nombre>
+        <apellidos>Durant</apellidos>
+        <equipo>
+            <ciudad>Brooklyn</ciudad>
+            <presidente>
+                <nombrePresidente>Joe</nombrePresidente>
+                <apellidosPresidente>Sai</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>32</edad>
+    </jugador>
+</liga_baloncesto>

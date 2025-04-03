@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro*)>
+    <!ELEMENT libro (titulo, editorial, autor, numero_paginas)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT autor (nombre, apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT numero_paginas (#PCDATA)>
+]>
+<biblioteca>
+    <libro>
+        <titulo>Historia de una escalera</titulo>
+        <editorial>Austral</editorial>
+        <autor>
+            <nombre>Antonio</nombre>
+            <apellidos>Buero Vallejo</apellidos>
+        </autor>
+        <numero_paginas>160</numero_paginas>
+    </libro>
+    <libro>
+        <titulo>La casa de Bernarda Alba</titulo>
+        <editorial>Cátedra</editorial>
+        <autor>
+            <nombre>Federico</nombre>
+            <apellidos>García Lorca</apellidos>
+        </autor>
+        <numero_paginas>144</numero_paginas>
+    </libro>
+    <libro>
+        <titulo>La familia de Pascual Duarte</titulo>
+        <editorial>Editorial Planeta</editorial>
+        <autor>
+            <nombre>Camilo José</nombre>
+            <apellidos>Cela</apellidos>
+        </autor>
+        <numero_paginas>192</numero_paginas>
+    </libro>
+</biblioteca>
