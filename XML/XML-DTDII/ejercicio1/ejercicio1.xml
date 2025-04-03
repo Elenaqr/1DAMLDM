@@ -7,9 +7,9 @@ Ejercicio: Ejercicio 1
 Cambio: Se agregó la documentación necesaria
 -->
 <!DOCTYPE factura [ <!-- Definición del elemento raíz -->
-    <!ELEMENT_factura (datos_emisor, datos_cliente, detalle_factura)> <!-- Atributos de 'factura': número y fecha -->
-    <!ATTLIST_factura numero CDATA #REQUIRED>
-    <!ATTLIST_factura fecha CDATA #REQUIRED>
+    <!ELEMENT factura (datos_emisor, datos_cliente, detalle_factura)> <!-- Atributos de 'factura': número y fecha -->
+    <!ATTLIST factura numero CDATA #REQUIRED>
+    <!ATTLIST factura fecha CDATA #REQUIRED>
     
     <!-- Datos del emisor y cliente -->
     <!ELEMENT datos_emisor (nombre, cif, telefono)>

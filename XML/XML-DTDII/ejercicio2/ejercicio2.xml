@@ -27,6 +27,6 @@ Cambio: Se agregó la documentación necesaria
         <nombre>Los Angeles Lakers</nombre>
         <titulos>17</titulos>
         <posicion>Clasificado en playoffs</posicion>
-        <quintetoMagic> Johnson, Kobe Bryant, Kareem Abdul-Jabbar, Shaquille O'Neal, Jerry West</quinteto>
+        <quinteto> Johnson, Kobe Bryant, Kareem Abdul-Jabbar, Shaquille O'Neal, Jerry West</quinteto>
     </equipo>
 </EquiposNBA>
