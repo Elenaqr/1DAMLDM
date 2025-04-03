@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 03/04/2025
+Ejercicio: Ejercicio 3
+Cambio: Se agregó la documentación necesaria
+-->
 <!DOCTYPE panel SYSTEM "ejercicio3.dtd">
+<!-- Enlazando con la DTD externa -->
 <panel>
     <nombre_aeropuerto>JFK</nombre_aeropuerto>
     <fecha>20/12/2013</fecha>

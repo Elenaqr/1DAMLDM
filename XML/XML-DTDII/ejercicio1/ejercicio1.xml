@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 1
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE factura [ <!-- Definición del elemento raíz -->
+    <!ELEMENT_factura (datos_emisor, datos_cliente, detalle_factura)> <!-- Atributos de 'factura': número y fecha -->
+    <!ATTLIST_factura numero CDATA #REQUIRED>
+    <!ATTLIST_factura fecha CDATA #REQUIRED>
+    
+    <!-- Datos del emisor y cliente -->
+    <!ELEMENT datos_emisor (nombre, cif, telefono)>
+    <!ELEMENT datos_cliente (nombre, cif, telefono)>
+    <!ELEMENT nombre (#PCDATA)> <!-- Nombre del emisor o cliente -->
+    <!ELEMENT cif (#PCDATA)> <!-- CIF del emisor o cliente -->
+    <!ELEMENT telefono (#PCDATA)> <!-- Teléfono del emisor o cliente -->
+    
+    <!-- Detalle de la factura -->
+    <!ELEMENT detalle_factura (linea+)> <!-- Contiene 1 o más líneas -->
+    <!ATTLIST detalle_factura importe CDATA #REQUIRED> <!-- Importe total obligatorio -->
+
+    <!-- Definición de una línea -->
+    <!ELEMENT linea (descripcion, cantidad, pvp, oferta?)> <!-- Cada línea tiene descripción, cantidad, precio y oferta opcional -->
+    <!ATTLIST linea codigo_articulo ID #REQUIRED> <!-- Código único del artículo -->
+    <!ATTLIST linea tipo (Libro | DVD | Varios) #REQUIRED> <!-- Tipo del artículo: Libro, DVD o Varios -->
+
+    <!ELEMENT descripcion (#PCDATA)> <!-- Descripción del artículo -->
+    <!ELEMENT cantidad (#PCDATA)> <!-- Cantidad del artículo -->
+    <!ELEMENT pvp (#PCDATA)> <!-- Precio por unidad -->
+    <!ELEMENT oferta EMPTY> <!-- Indica si el artículo tiene oferta -->
+]>
+
+<factura numero="12345" fecha="2023-10-01"> <!-- Información del emisor de la factura -->
+    <datos_emisor>
+        <nombre>Librería ABC</nombre>
+        <cif>ABC12345678</cif>
+        <telefono>123456789</telefono>
+    </datos_emisor>
+
+    <!-- Información del cliente -->
+    <datos_cliente>
+        <nombre>Biblioteca XYZ</nombre>
+        <cif>XYZ87654321</cif>
+        <telefono>987654321</telefono>
+    </datos_cliente>
+
+    <!-- Detalle de la factura -->
+    <detalle_factura importe="150.00">
+        <linea codigo_articulo="ART001" tipo="Libro">
+            <descripcion>El Quijote</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>20.00</pvp>
+            <oferta/> <!-- Indica que este artículo tiene oferta -->
+        </linea>
+        <linea codigo_articulo="ART002" tipo="DVD">
+            <descripcion>Rey León</descripcion>
+            <cantidad>1</cantidad>
+            <pvp>15.00</pvp>
+        </linea>
+    </detalle_factura>
+</factura>

@@ -1,0 +1,18 @@
+<!-- Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 3
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE ejercicio3 [
+    <!ELEMENT panel (nombre_aeropuerto, fecha, vuelos)> <!-- El elemento raíz -->
+    <!ELEMENT nombre_aeropuerto (#PCDATA)> <!-- Nombre del aeropuerto -->
+    <!ELEMENT fecha (#PCDATA)> <!-- Fecha del panel de vuelos -->
+    <!ELEMENT vuelos (vuelo+)> <!-- Con 1 o más elementos 'vuelo' -->
+    <!ELEMENT vuelo (origen, destino, salida, llegada)> <!-- Cada vuelo tiene origen, destino, hora de salida y hora de llegada -->
+    <!ATTLIST vuelo codigo ID #REQUIRED> <!-- Código del vuelo (obligatorio) --> estado (C | E | R) #REQUIRED> <!-- Estado del vuelo: C (Cancelado), E (En vuelo), R (Retrasado) (obligatorio) -->
+    <!ELEMENT origen (#PCDATA)> <!-- Ciudad de origen del vuelo -->
+    <!ELEMENT destino (#PCDATA)> <!-- Ciudad de destino del vuelo -->
+    <!ELEMENT salida (#PCDATA)> <!-- Hora de salida del vuelo -->
+    <!ELEMENT llegada (#PCDATA)> <!-- Hora de llegada del vuelo -->
+]>
