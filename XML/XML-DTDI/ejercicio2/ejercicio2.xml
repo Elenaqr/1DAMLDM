@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE liga_baloncesto [
-    <!ELEMENT liga_baloncesto (jugador*)>
-    <!ELEMENT jugador (nombre, apellidos, equipo, edad)>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT apellidos (#PCDATA)>
-    <!ELEMENT equipo (ciudad, presidente)>
-    <!ELEMENT ciudad (#PCDATA)>
-    <!ELEMENT presidente (nombrePresidente, apellidosPresidente)>
-    <!ELEMENT nombrePresidente (#PCDATA)>
-    <!ELEMENT apellidosPresidente (#PCDATA)>
-    <!ELEMENT edad (#PCDATA)>
-]>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 18/03/2025
+Ejercicio: Ejercicio 2
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE liga_baloncesto SYSTEM "ejercicio2.dtd"> <!-- Enlazando con la DTD externa -->
 <liga_baloncesto>
     <jugador>
         <nombre>LeBron</nombre>
@@ -22,30 +18,30 @@
                 <apellidosPresidente>Buss</apellidosPresidente>
             </presidente>
         </equipo>
-        <edad>36</edad>
+        <edad>40</edad>
     </jugador>
     <jugador>
-        <nombre>Stephen</nombre>
-        <apellidos>Curry</apellidos>
+        <nombre>Michael</nombre>
+        <apellidos>Jordan</apellidos>
         <equipo>
-            <ciudad>San Francisco</ciudad>
+            <ciudad>Chicago</ciudad>
             <presidente>
-                <nombrePresidente>Joe</nombrePresidente>
-                <apellidosPresidente>Lake</apellidosPresidente>
+                <nombrePresidente>Jerry</nombrePresidente>
+                <apellidosPresidente>Reinsdorf</apellidosPresidente>
             </presidente>
         </equipo>
-        <edad>33</edad>
+        <edad>62</edad>
     </jugador>
-    <jugador>
-        <nombre>KD</nombre>
-        <apellidos>Durant</apellidos>
+     <jugador>
+        <nombre>Kobe</nombre>
+        <apellidos>Bryant</apellidos>
         <equipo>
-            <ciudad>Brooklyn</ciudad>
+            <ciudad>Los Angeles</ciudad>
             <presidente>
-                <nombrePresidente>Joe</nombrePresidente>
-                <apellidosPresidente>Sai</apellidosPresidente>
+                <nombrePresidente>Jeanie</nombrePresidente>
+                <apellidosPresidente>Buss</apellidosPresidente>
             </presidente>
         </equipo>
-        <edad>32</edad>
+        <edad>41</edad>
     </jugador>
 </liga_baloncesto>

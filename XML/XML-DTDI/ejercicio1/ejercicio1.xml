@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 03/04/2025
+Ejercicio: Ejercicio 1
+Cambio: Se agregó la documentación necesaria
+-->
 <!DOCTYPE biblioteca [
-    <!ELEMENT biblioteca (libro*)>
-    <!ELEMENT libro (titulo, editorial, autor, numero_paginas)>
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT editorial (#PCDATA)>
-    <!ELEMENT autor (nombre, apellidos)>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT apellidos (#PCDATA)>
-    <!ELEMENT numero_paginas (#PCDATA)>
+    <!ELEMENT biblioteca (libro*)> <!-- La biblioteca tiene 1 o más libros -->
+    <!ELEMENT libro (titulo, editorial, autor, numero_paginas)> <!-- Cada libro tiene título, editorial, autor y número de páginas -->
+    <!ELEMENT titulo (#PCDATA)> <!-- El título -->
+    <!ELEMENT editorial (#PCDATA)> <!-- La editorial -->
+    <!ELEMENT autor (nombre, apellidos)> <!-- El nombre y apellidos del autor -->
+    <!ELEMENT nombre (#PCDATA)> <!-- El nombre del autor -->
+    <!ELEMENT apellidos (#PCDATA)> <!-- Los apellidos del autor -->
+    <!ELEMENT numero_paginas (#PCDATA)> <!-- Número de páginas -->
 ]>
-<biblioteca>
+<biblioteca> <!-- Inicio de la lista de libros -->
     <libro>
         <titulo>Historia de una escalera</titulo>
         <editorial>Austral</editorial>

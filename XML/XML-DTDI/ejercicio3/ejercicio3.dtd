@@ -1,14 +1,20 @@
+<!-- Nombre: Elena Qin Real Zhang -->
+<!-- Curso: 1DAM -->
+<!-- Fecha: 18/03/2025 -->
+<!-- Ejercicio: Ejercicio 3 -->
+<!-- Cambio: Se agregó la documentación necesaria -->
+
 <!DOCTYPE agenda [
-    <!ELEMENT agenda (nombre, apellido, telefono, fecha_nacimiento, lugar_nacimiento)>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT apellido (#PCDATA)>
-    <!ELEMENT telefono (#PCDATA)>
-    <!ELEMENT fecha_nacimiento (anio, mes, dia)>
-    <!ELEMENT anio (#PCDATA)>
-    <!ELEMENT mes (#PCDATA)>
-    <!ELEMENT dia (#PCDATA)>
-    <!ELEMENT lugar_nacimiento (pais, ciudad, localidad)>
-    <!ELEMENT pais (#PCDATA)>
-    <!ELEMENT ciudad (#PCDATA)>
-    <!ELEMENT localidad (#PCDATA)>
+    <!ELEMENT agenda (nombre, apellido+, telefono, fecha_nacimiento, lugar_nacimiento)> <!-- El elemento raíz --> 
+    <!ELEMENT nombre (#PCDATA)> <!-- El nombre de la persona -->
+    <!ELEMENT apellido (#PCDATA)> <!-- Los apellidos de la persona (puede haber más de uno) -->
+    <!ELEMENT telefono (#PCDATA)> <!-- El número de teléfono de la persona -->
+    <!ELEMENT fecha_nacimiento (anio, mes, dia)> <!-- La fecha de nacimiento de la persona, dividida en año, mes y día -->
+    <!ELEMENT anio (#PCDATA)> <!-- El año de nacimiento -->
+    <!ELEMENT mes (#PCDATA)> <!-- El mes de nacimiento -->
+    <!ELEMENT dia (#PCDATA)> <!-- El día de nacimiento -->
+    <!ELEMENT lugar_nacimiento (pais, ciudad, localidad)> <!-- El lugar de nacimiento de la persona, dividido en país, ciudad y localidad -->
+    <!ELEMENT pais (#PCDATA)> <!-- El país de nacimiento -->
+    <!ELEMENT ciudad (#PCDATA)> <!-- La ciudad de nacimiento -->
+    <!ELEMENT localidad (#PCDATA)> <!-- La localidad de nacimiento -->
 ]>
