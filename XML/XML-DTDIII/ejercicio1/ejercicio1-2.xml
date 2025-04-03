@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE cuento SYSTEM "Cuentos.dtd">
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 03/04/2025
+Ejercicio: Ejercicio 1
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE cuento SYSTEM "ejercicio1-1y1-2.dtd">
+<!-- Enlazando con la DTD externa -->
 <cuento cod="C2" titulo="La casa del terror">
     <personajes>
         <personaje id="p1" tipo="antagonista">
