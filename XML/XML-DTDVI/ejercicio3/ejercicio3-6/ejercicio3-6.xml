@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 3-6
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE futbol [
+    <!ELEMENT futbol ((jugador|equipo)*)> <!-- Elemento raíz con 0 o más elementos 'jugador' -->
+    <!ELEMENT jugador EMPTY> <!-- Elemento 'jugador' tiene el nombre de un jugador -->
+    <!ATTLIST jugador nombre NMTOKENS #REQUIRED> <!-- Atributo 'nombre' es obligatorio -->
+    <!ATTLIST jugador codigo ID #REQUIRED> <!-- Elemento 'titulo' de tipo ID y obligatorio -->
+    <!ELEMENT equipo EMPTY> <!-- Elemento 'equipo' tiene el nombre de un equipo -->
+    <!ATTLIST equipo nombre CDATA #REQUIRED> <!-- Atributo 'nombre' es obligatorio -->
+    <!ATTLIST equipo jugadores IDREFS #IMPLIED> <!-- Elemento 'titulo' de tipo ID y obligatorio -->
+]>
+
+<futbol>
+    <jugador nombre="Alfredo_Di_Stefano" codigo="1" />
+    <jugador nombre="Edson_Arantes_do_Nascimento_Pelé" codigo="2" />
+    <jugador nombre="Diego_Armando_Maradona" codigo="3" />
+    <jugador nombre="Johan_Cruyff" codigo="4" />
+    <equipo nombre="Societá Sportiva Calcio Napoli" jugadores="3" />
+    <equipo nombre="Futbol Club Barcelona" jugadores="3 4" />
+</futbol>

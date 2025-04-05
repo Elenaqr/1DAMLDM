@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 3-4
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE listaCompra [
+    <!ELEMENT listaCompra (item*)> <!-- Elemento raíz con 0 o más elementos 'item' -->
+    <!ELEMENT item EMPTY> <!-- Elemento 'item' tiene el nombre de un item -->
+    <!ATTLIST item nombre CDATA #REQUIRED> <!-- Atributo 'nombre' obligatorio -->
+    <!ATTLIST item cantidad CDATA #REQUIRED> <!-- Elemento 'titulo' de tipo CDATA y obligatorio -->
+]>
+
+<listaCompra>
+    <item nombre="leche" cantidad="12 litos" />
+    <item nombre="pan" cantidad="3 barras de cuatro" />
+</listaCompra>

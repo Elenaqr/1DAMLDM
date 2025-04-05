@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 3-2
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE pelicula [
+    <!ELEMENT pelicula EMPTY> <!-- Elemento raíz 'pelicula' vacío -->
+    <!ATTLIST pelicula titulo CDATA #IMPLIED> <!-- Elemento 'titulo' de tipo CDATA, opcional -->
+]>
+
+<pelicula titulo="La diligencia" />

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 3-3
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE cuadros [
+    <!ELEMENT cuadros (cuadro*)> <!-- Elemento raíz con 0 o más elementos 'cuadro' -->
+    <!ELEMENT cuadro EMPTY> <!-- Elemento 'cuadro' tiene el nombre de un cuadro -->
+    <!ATTLIST cuadro titulo ID #REQUIRED> <!-- Atributo 'nombre' obligatorio -->
+    <!ATTLIST cuadro autor CDATA #REQUIRED> <!-- Elemento 'titulo' de tipo CDATA y obligatorio -->
+]>
+
+<cuadros>
+    <cuadro titulo="Adán y Eva" autor="VAlberto Durero" />
+    <cuadro titulo="El Adán y Eva" autor="Lucas Cranch, el viejo" />
+</cuadros>
