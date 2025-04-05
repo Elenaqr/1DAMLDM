@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 2-1
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE favoritos [
+    <!ELEMENT favoritos (marcador*)> <!-- Elemento raíz 'favoritos' tiene 0 o más elementos 'marcador' --> 
+    <!ELEMENT marcador (nombre, uri)> <!-- Elemento 'marcador' tiene un elemento 'nombre' y un elemento 'uri' -->
+    <!ELEMENT nombre (#PCDATA)> <!-- Elemento 'nombre' tiene el nombre de un marcador -->
+    <!ELEMENT uri (#PCDATA)> <!-- Elemento 'uri' tiene la URI del marcador -->
+]>
+<favoritos>
+    <marcador>
+        <nombre>W3C</nombre>
+        <uri>http://www.w3.org/</uri>
+    </marcador>
+    <marcador>
+        <nombre>Web Hypertext Application Technology Working Group (WHATWG)</nombre>
+        <uri>http://www.whatwg.org/</uri>
+    </marcador>
+</favoritos>

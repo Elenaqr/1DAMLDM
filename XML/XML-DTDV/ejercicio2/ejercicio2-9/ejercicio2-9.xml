@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 2-9
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE mensajes [
+    <!ELEMENT mensajes (mensaje*)> <!-- Elemento raíz 'mensajes' tiene 0 o más elementos 'mensaje' --> 
+    <!ELEMENT mensaje (de, para, hora, texto)> <!-- Elemento 'mensaje' tiene 4 elementos: 'de', 'para', 'hora' y 'texto' -->
+    <!ELEMENT de (#PCDATA)> <!-- Elemento 'de' tiene una de -->
+    <!ELEMENT para (#PCDATA)> <!-- Elemento 'para' tiene un para -->
+    <!ELEMENT hora (#PCDATA)> <!-- Elemento 'hora' tiene una hora -->
+    <!ELEMENT texto (#PCDATA)> <!-- Elemento 'texto' tiene un texto -->
+    <!ELEMENT strong (#PCDATA)> <!-- Elemento 'strong' tiene un texto en negrita -->
+]>
+<mensajes>
+    <mensaje>
+        <de>Pepe (pepe@examenple.com)</de>
+        <para>Juan (juan@examenple.com)</para>
+        <hora>28/02/2011 17:48:23,61</hora>
+        <texto>¿Hola, Juan, qué haces?</texto>
+    </mensaje>
+    <mensaje>
+        <de>Juan (juan@examenple.com)</de>
+        <para>Pepe (pepe@examenple.com)</para>
+        <hora>28/02/2011 17:54:20,87</hora>
+        <texto>Aquí, aprendiendo <strong> XML</strong></texto>
+    </mensaje>
+</mensajes> 

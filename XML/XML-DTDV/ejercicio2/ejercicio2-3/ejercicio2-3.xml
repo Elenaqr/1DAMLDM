@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 2-3
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE aeropuertos [
+    <!ELEMENT aeropuertos (aeropuerto*)> <!-- Elemento raíz 'aeropuertos' tiene 0 o más elementos 'aeropuerto' --> 
+    <!ELEMENT aeropuerto (nombre, cerrado?)> <!-- Elemento 'aeropuerto' tiene un elemento 'nombre' y un elemento 'cerrado' opcional -->ç
+    <!ELEMENT nombre (#PCDATA)> <!-- Elemento 'nombre' tiene una nombre -->
+    <!ELEMENT cerrado (#PCDATA)> <!-- Elemento 'cerrado' tiene un cerrado -->
+]>
+<aeropuertos>
+    <aeropuerto>
+        <nombre>Berlín Schönefeld (SFX)</nombre>
+    </aeropuerto>
+    <aeropuerto>
+        <nombre>Berlín Tempelhof</nombre>
+        <cerrado />
+    </aeropuerto>
+</aeropuertos> 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 2-4
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE vuelos [
+    <!ELEMENT vuelos (vuelo*)> <!-- Elemento raíz 'vuelos' tiene 0 o más elementos 'vuelo' --> 
+    <!ELEMENT vuelo (origen, destino)> <!-- Elemento 'vuelo' tiene un elemento 'origen' y un elemento 'destino' -->
+    <!ELEMENT origen (#PCDATA)> <!-- Elemento 'origen' tiene una origen -->
+    <!ELEMENT destino (#PCDATA)> <!-- Elemento 'destino' tiene un destino -->
+]>
+<vuelos>
+    <vuelo>
+        <origen>Valencia (VLC)</origen>
+        <destino>Londres Heathrow (LHR)</destino>
+    </vuelo>
+    <vuelo>
+        <origen>París Charles de Gaulle (CDG)</origen>
+        <destino>Berlín Schönefeld (SFX)</destino>
+    </vuelo>
+</vuelos> 

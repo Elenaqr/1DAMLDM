@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 2-8
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE contabilidad [
+    <!ELEMENT contabilidad (apunte*)> <!-- Elemento raíz 'contabilidad' tiene 0 o más elementos 'apunte' -->
+    <!ELEMENT apunte (ingreso | gasto, fecha, cantidad, concepto)> <!-- Elemento 'apunte' tiene un elemento 'ingreso' o 'gasto' y 'fecha', 'cantidad' y 'concepto' --> 
+    <!ELEMENT ingreso EMPTY> <!-- Elemento 'ingreso' vacío -->
+    <!ELEMENT gasto EMPTY> <!-- Elemento 'gasto' vacío -->  
+    <!ELEMENT fecha (#PCDATA)> <!-- Elemento 'fecha' tiene un elemento 'cantidad' y un elemento 'concepto' -->
+    <!ELEMENT cantidad (#PCDATA)> <!-- Elemento 'cantidad' tiene una cantidad -->
+    <!ELEMENT concepto (#PCDATA)> <!-- Elemento 'concepto' tiene un concepto -->
+]>
+<contabilidad>
+    <apunte>
+        <ingreso />
+        <fecha>24 de febrero de 2011</fecha>
+        <cantidad>1800,00 €</cantidad>
+        <concepto>Salario</concepto>
+    </apunte>
+    <apunte>
+        <gasto />
+        <fecha>28 de febrero de 2011</fecha>
+        <cantidad>74,25 €</cantidad>
+        <concepto>Recibo luz</concepto>
+    </apunte>
+</contabilidad> 

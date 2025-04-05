@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 2-4
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE colores [
+    <!ELEMENT colores (color*)> <!-- Elemento raíz 'colores' tiene 0 o más elementos 'color' --> 
+    <!ELEMENT color (nombreSvg, codigo)> <!-- Elemento 'color' tiene un elemento 'nombreSvg' y un elemento 'codigo' -->
+    <!ELEMENT codigo (rgb | cmyk)> <!-- Elemento 'codigo' tiene un elemento 'rgb' o un elemento 'cmyk' -->
+    <!ELEMENT nombreSvg (#PCDATA)> <!-- Elemento 'nombreSvg' tiene una nombreSvg -->
+    <!ELEMENT rgb (#PCDATA)> <!-- Elemento 'rgb' tiene un rgb -->
+    <!ELEMENT cmyk (#PCDATA)> <!-- Elemento 'cmyk' tiene un cmyk -->
+]>
+<colores>
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <rgb>#800080</rgb>
+        </codigo>
+        
+    </color>
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <cmyk>#00FF007F</cmyk>
+        </codigo>    
+    </color>
+</colores> 

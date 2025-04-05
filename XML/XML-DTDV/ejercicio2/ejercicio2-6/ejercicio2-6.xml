@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 2-6
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE paises [
+    <!ELEMENT paises (pais*)> <!-- Elemento raíz 'paises' con 0 o más elementos 'pais' -->
+    <!ELEMENT pais (nombre, unionEuropea?, otan?)> <!-- Elemento 'pais' tiene un elemento 'nombre', un elemento opcional 'unionEuropea' y un elemento opcional 'otan' -->
+    <!ELEMENT nombre EMPTY> <!-- Elemento 'nombre' tiene una nombre -->
+    <!ELEMENT unionEuropea EMPTY> <!-- Elemento 'unionEuropea' tiene un unionEuropea -->
+    <!ELEMENT otan EMPTY> <!-- Elemento 'otan' tiene una otan -->
+]>
+<paises>
+    <pais>
+        <nombre>España</nombre>
+        <unionEuropea />
+        <otan />
+    </pais>
+    <no>
+        <nombre>Noruega</nombre>
+        <otan />
+    </no>
+    <pais>
+        <nombre>Austria</nombre>
+        <unionEuropea />
+    </pais>
+</paises> 
