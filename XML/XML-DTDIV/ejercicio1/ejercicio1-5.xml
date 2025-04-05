@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 1-5
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE animales [
+    <!ELEMENT animales (animal*)> <!-- Elemento raíz con 0 o más elementos-->
+    <!ELEMENT animal (#PCDATA)> <!-- Elemento 'animal'-->
+]>
+
+<animales>
+    <animla>Caniche</animla>
+    <animal>Siamés</animal>
+</animales>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 1-8
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE agenda [
+    <!ELEMENT agenda (contacto*)> <!-- Elemento raíz con 0 o más elementos-->
+    <!ELEMENT contacto (nombre, telefonoFijo*, telefonoMovil+)> <!-- Cada 'contacto' tiene 'nombre', 0 o más 'telefonoFijo' y al menos un 'telefonoMovil' -->
+    <!ELEMENT nombre (#PCDATA)> <!-- Elemento 'nombre' tiene el nombre del contacto -->
+    <!ELEMENT telefonoFijo (#PCDATA)> <!-- Elemento 'telefonoFijo' tiene el número de teléfono fijo del contacto -->
+    <!ELEMENT telefonoMovil (#PCDATA)> <!-- Elemento 'telefonoMovil' tiene el número de teléfono fijo del contacto -->
+]>
+
+<agenda>
+    <contacto>
+        <nombre>Ayuntamiento</nombre>
+        <telefonoFijo>010</telefonoFijo>
+        <telefonoMovil>Desconocido</telefonoMovil>
+    </contacto>
+    <contacto>
+        <nombre>Emergencias</nombre>
+        <telefonoFijo>112 (Unión Europea)</telefonoFijo>
+        <telefonoFijo>911 (Estados Unidos)</telefonoFijo>
+        <telefonoMovil>Desconocido</telefonoMovil>
+    </contacto>
+</agenda>

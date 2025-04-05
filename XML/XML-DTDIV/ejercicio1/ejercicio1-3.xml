@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 1-3
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE colores [
+    <!ELEMENT colores (color*)> <!-- Elemento raíz con 0 o más elementos-->
+    <!ELEMENT color (#PCDATA)> <!-- Elemento 'color' tiene el nombre de un color -->
+]>
+
+<colores>
+    <color>azul marino</color>
+    <color>negro</color>
+    <color>amarillo</color>
+</colores>

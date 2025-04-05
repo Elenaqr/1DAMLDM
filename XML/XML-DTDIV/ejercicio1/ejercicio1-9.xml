@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 1-9
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE sistemaSolar [
+    <!ELEMENT sistemaSolar (cuerpo*)> <!-- Elemento raíz con 0 o más elementos-->
+    <!ELEMENT cuerpo (planeta|satelite|asteroide)> <!-- Cada 'cuerpo' puede ser un 'planeta', 'satelite' o 'asteroide' -->
+    <!ELEMENT asteroide (#PCDATA)> <!-- Elemento 'asteroide' -->
+    <!ELEMENT satelite (#PCDATA)> <!-- Elemento 'satelite' -->
+    <!ELEMENT asteroide (#PCDATA)> <!-- Elemento 'planeta' -->
+]>
+
+<sistemaSolar>
+    <cuerpo>
+        <planeta>Tierra</planeta>
+    </cuerpo>
+    <cuerpo>
+        <satelite>Luna</satelite>
+    </cuerpo>
+    <cuerpo>
+        <asteroide>Ceres</asteroide>
+    </cuerpo> 
+     
+
+</sistemaSolar>

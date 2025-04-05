@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 1-6
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE escritores [
+    <!ELEMENT escritores (escritor*)> <!-- Elemento raíz con 0 o más elementos-->
+    <!ELEMENT escritor (nombre, nacimiento)> <!-- Cada 'escritor' tien 'nombre' y 'nacimiento' -->
+    <!ELEMENT nombre (#PCDATA)> <!-- Elemento 'nombre' -->
+    <!ELEMENT nacimiento (#PCDATA)> <!-- Elemento 'nacimiento' -->
+]>
+
+<escritores>
+    <escritor>
+        <nombre>Mario Vargas Llosa</nombre>
+        <nacimiento>28 de marzo de 1936</nacimiento>
+    </escritor>
+    <escritor>
+        <nombre>Milan Kundera</nombre>
+        <nacimiento>1 de abril de 1929</nacimiento>
+    </escritor>
+</escritores>

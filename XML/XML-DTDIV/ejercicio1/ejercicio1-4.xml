@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 1-4
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE flores [
+    <!ELEMENT flores (flor+)> <!-- Elemento raíz 'flores' tiene 1 o más elementos 'flor' -->
+    <!ELEMENT flor (#PCDATA)> <!-- Elemento 'flor' tiene el nombre de una flor -->
+]>
+
+<flores>
+    <flor>margarita</flor>
+</flores>
