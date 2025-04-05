@@ -8,7 +8,7 @@ Cambio: Se agregó la documentación necesaria
 -->
 <!DOCTYPE efemerides [
     <!ELEMENT efemerides (efemeride*)> <!-- Elemento raíz 'efemerides' tiene 0 o más elementos 'efemeride' --> 
-    <!ELEMENT efemeride (fecha, hecho)> <!-- Elemento 'efemeride' tiene un elemento 'fecha' y un elemento 'hecho' -->ç
+    <!ELEMENT efemeride (fecha, hecho)> <!-- Elemento 'efemeride' tiene un elemento 'fecha' y un elemento 'hecho' -->
     <!ELEMENT fecha (#PCDATA)> <!-- Elemento 'fecha' tiene una fecha -->
     <!ELEMENT hecho (#PCDATA)> <!-- Elemento 'hecho' tiene un hecho -->
 ]>

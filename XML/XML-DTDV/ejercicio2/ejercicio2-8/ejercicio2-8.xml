@@ -8,7 +8,7 @@ Cambio: Se agregó la documentación necesaria
 -->
 <!DOCTYPE contabilidad [
     <!ELEMENT contabilidad (apunte*)> <!-- Elemento raíz 'contabilidad' tiene 0 o más elementos 'apunte' -->
-    <!ELEMENT apunte (ingreso | gasto, fecha, cantidad, concepto)> <!-- Elemento 'apunte' tiene un elemento 'ingreso' o 'gasto' y 'fecha', 'cantidad' y 'concepto' --> 
+    <!ELEMENT apunte ((ingreso | gasto)*, fecha, cantidad, concepto)> <!-- Elemento 'apunte' tiene un elemento 'ingreso' o 'gasto' y 'fecha', 'cantidad' y 'concepto' --> 
     <!ELEMENT ingreso EMPTY> <!-- Elemento 'ingreso' vacío -->
     <!ELEMENT gasto EMPTY> <!-- Elemento 'gasto' vacío -->  
     <!ELEMENT fecha (#PCDATA)> <!-- Elemento 'fecha' tiene un elemento 'cantidad' y un elemento 'concepto' -->
