@@ -5,7 +5,7 @@ El archivo XML representa una agenda de contactos utilizando una DTD interna.
 
 ## Estructura del Documento
 ### Elemento Principal
-- **`agenda`**: Elemento raíz que con 0 o más elementos `contacto`.
+- **`agenda`**: Elemento raíz con 0 o más elementos `contacto`.
 - **`contacto`**: Cada `contacto` tiene:
   - **`nombre`**: Nombre del contacto.
   - **`telefonoFijo`**: 0 o más números de teléfono fijo.
