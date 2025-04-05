@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 4-1
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE libro [
+    <!ELEMENT libro EMPTY> <!-- Elemento raíz 'libro' vacío -->
+    <!ATTLIST libro autor CDATA #REQUIRED> <!-- Elemento 'autor' de tipo CDATA y obligatorio -->
+]>
+
+<libro autor="Mario Vargas Llosa" />

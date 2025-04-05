@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 4-3
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE cosasPorHacer [
+    <!ELEMENT cosasPorHacer (cosa*)> <!-- Elemento raíz con 0 o más elementos 'cosa' -->
+    <!ELEMENT cosa EMPTY> <!-- Elemento 'cosa' tiene el fecha de un cosa -->
+    <!ATTLIST cosa fecha CDATA #REQUIRED> <!-- Atributo 'fecha' obligatorio -->
+    <!ATTLIST cosa asunto CDATA #REQUIRED> <!-- Elemento 'fecha' de tipo CDATA y obligatorio -->
+    <!ATTLIST cosa fechaLimite CDATA #REQUIRED> <!-- Elemento 'fecha' de tipo CDATA y obligatorio -->
+]>
+
+<cosasPorHacer>
+    <cosa fecha="20 de febrero de 2011" asunto="Preparar ejercicios de DTDs" fechaLimite="1 de marzo de 2011" />
+    <cosa fecha="21 de febrero de 2011" asunto="Preparar tema XSLT" fechaLimite="5 de marzo de 2011" />
+</cosasPorHacer>

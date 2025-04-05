@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 05/04/2025
+Ejercicio: Ejercicio 4-2
+Cambio: Se agregó la documentación necesaria
+-->
+<!DOCTYPE inventores [
+    <!ELEMENT inventores (inventor*)> <!-- Elemento raíz con 0 o más elementos 'inventor' -->
+    <!ELEMENT inventor EMPTY> <!-- Elemento 'inventor' tiene el nombre de un inventor -->
+    <!ATTLIST inventor nombre CDATA #IMPLIED> <!-- Atributo 'nombre' opcional -->
+    <!ATTLIST inventor invento CDATA #REQUIRED> <!-- Elemento 'nombre' de tipo CDATA y obligatorio -->
+]>
+
+<inventores>
+    <inventor nombre="Robert Adler" invento="Mando a distancia" />
+    <inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+    <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+    <inventor invento="Fuego" />
+</inventores>
