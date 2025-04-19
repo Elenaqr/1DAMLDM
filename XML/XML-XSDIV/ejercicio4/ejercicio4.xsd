@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 19/04/2025
+Ejercicio: Heladeria 2
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="heladeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="helado" maxOccurs="unbounded"> <!-- Elemento 'helado' puede repetirse -->
+          <xs:complexType>
+            <xs:choice>
+              <xs:sequence> <!-- Opción 1: fresa y chocolate -->
+                <xs:element name="fresa"> <!-- Elemento 'fresa' -->
+                  <xs:complexType/>
+                </xs:element>
+                <xs:element name="chocolate"> <!-- Elemento 'chocolate' -->
+                  <xs:complexType/>
+                </xs:element>
+              </xs:sequence>
+              <xs:sequence> <!-- Opción 2: vainilla y chocolate -->
+                <xs:element name="vainilla"> <!-- Elemento 'vainilla' -->
+                  <xs:complexType/>
+                </xs:element>
+                <xs:element name="chocolate"> <!-- Elemento 'chocolate' -->
+                  <xs:complexType/>
+                </xs:element>
+              </xs:sequence>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 19/04/2025
+Ejercicio: Heladeria 1
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="cantidadGramos">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/> <!-- Valor mínimo 0 -->
+      <xs:maxInclusive value="1000"/> <!-- Valor máximo 1000 -->
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="heladeria"> <!-- Definición elemento raíz -->
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="helado" maxOccurs="unbounded"> <!-- Elemento 'helado' puede repetirse -->
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice> <!-- chocolate o fresa -->
+                <xs:element name="chocolate" type="cantidadGramos"/> <!-- Elemento 'chocolate' tipo 'cantidadGramos' -->
+                <xs:element name="fresa" type="cantidadGramos"/> <!-- Elemento 'fresa' tipo 'cantidadGramos' -->
+              </xs:choice>
+              <xs:choice> <!-- vainilla, turron o nata -->
+                <xs:element name="vainilla" type="cantidadGramos"/> <!-- Elemento 'vainilla' tipo 'cantidadGramos' -->
+                <xs:element name="turron" type="cantidadGramos"/> <!-- Elemento 'turron' tipo 'cantidadGramos' -->
+                <xs:element name="nata" type="cantidadGramos"/> <!-- Elemento 'nata' tipo 'cantidadGramos' -->
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="fabricación" type="xs:date" use="required"/> <!-- Atributo 'fabricación' obligatorio tipo fecha -->
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

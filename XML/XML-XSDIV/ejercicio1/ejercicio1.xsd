@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin real Zhang
+Curso: 1ºDAM 
+Fecha: 19/04/2025
+Ejercicio: Alumnos 1
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="alumno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/> <!-- Elemento 'nombre' de tipo string -->
+        <xs:element name="direccion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="calle" type="xs:string"/> <!-- Elemento 'calle' de tipo string -->
+              <xs:element name="numero"> <!-- Elemento 'numero' es de tipo entero -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="0"/> <!-- Valor mínimo 0 -->
+                    <xs:maxInclusive value="500"/> <!-- Valor máximo 500 -->
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ciudad" type="xs:string"/><!-- Elemento 'ciudad' de tipo string -->
+              <xs:element name="provincia" type="xs:string"/> <!-- Elemento 'provincia' de tipo string -->
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="telefono" type="xs:integer" minOccurs="0" maxOccurs="5"/> <!-- Elemento 'telefono' es entero, opcional, con máximo 5  -->
+      </xs:sequence> 
+      <xs:attribute name="dni" use="required"> <!-- Atributo 'dni' obligatorio -->
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[A-Z]"/> <!-- 8 dígitos seguidos de una letra mayúscula -->
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

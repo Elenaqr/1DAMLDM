@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin Real Zhang 
+Curso: 1ºDAM 
+Fecha: 19/04/2025
+Ejercicio: Faq
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="tipoVersion">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+\.\d+"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="tipoQ">
+    <xs:sequence>
+      <xs:element name="qtext" type="xs:string"/> <!-- Pregunta -->
+      <xs:element name="a" type="xs:string"/> <!-- Respuesta -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoPart">
+    <xs:sequence>
+      <xs:element name="q" type="tipoQ" maxOccurs="unbounded"/> <!-- Elemento 'q' puede repetirse -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoInfo">
+    <xs:sequence>
+      <xs:element name="titulo" type="xs:string"/> <!-- Título del FAQ -->
+      <xs:element name="autor" type="xs:string"/> <!-- Autor del FAQ -->
+      <xs:element name="email" type="xs:string" minOccurs="0"/> <!-- Email opcional -->
+      <xs:element name="version" type="tipoVersion" minOccurs="0"/> <!-- Versión opcional -->
+      <xs:element name="fecha" type="xs:date" minOccurs="0"/> <!-- Fecha opcional -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="faq">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="info" type="tipoInfo"/> <!-- Información general -->
+        <xs:element name="part" type="tipoPart" maxOccurs="unbounded"/> <!-- Secciones de preguntas -->
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

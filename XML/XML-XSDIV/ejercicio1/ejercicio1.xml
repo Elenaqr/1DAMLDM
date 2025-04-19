@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin real Zhang
+Curso: 1ºDAM 
+Fecha: 19/04/2025
+Ejercicio: Alumnos 1
+-->
+<alumno dni="12345678A" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Alumnos1.xsd">
+    <nombre>Juan Garcia</nombre>
+    <direccion>
+        <calle>Avenida de la Fuente</calle>
+        <numero>6</numero>
+        <ciudad>Zafra</ciudad>
+        <provincia>Badajoz</provincia>
+    </direccion>
+    <telefono>924555555</telefono>
+    <telefono>658741236</telefono>
+</alumno>

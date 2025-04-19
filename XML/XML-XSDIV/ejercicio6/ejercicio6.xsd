@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin Real Zhang 
+Curso: 1ºDAM 
+Fecha: 19/04/2025
+Ejercicio: Libreria
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="tipoTelefono">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{9}"/> <!-- 9 dígitos -->
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tipoFormato"> 
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Rústica"/>
+      <xs:enumeration value="Tapa blanda"/> 
+      <xs:enumeration value="Tapa dura"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="tipoPropietario">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/> <!-- Nombre del propietario -->
+      <xs:element name="telefono" type="tipoTelefono" minOccurs="0" maxOccurs="unbounded"/> <!-- Teléfono opcional y puede repetirse -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoLibro">
+    <xs:sequence>
+      <xs:element name="titulo" type="xs:string"/> <!-- Título del libro -->
+      <xs:element name="autor" type="xs:string"/> <!-- Autor del libro -->
+      <xs:element name="formato" type="tipoFormato" minOccurs="0"/> <!-- Formato opcional -->
+      <xs:element name="publicacion" type="xs:integer"/> <!-- Año de publicación -->
+      <xs:element name="precio" type="xs:decimal"/> <!-- Precio del libro -->
+      <xs:element name="cantidad" type="xs:integer" minOccurs="0"/> <!-- Cantidad opcional -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="libreria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="codigo"> <!-- Código de la librería -->
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="1000"/> <!-- Valor mínimo 1000 -->
+              <xs:maxInclusive value="9999"/> <!-- Valor máximo 9999 -->
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="direccion" type="xs:string"/> <!-- Dirección de la librería -->
+        <xs:element name="telefono" type="tipoTelefono"/> <!-- Teléfono de la librería -->
+        <xs:element name="propietario" type="tipoPropietario"/> <!-- Propietario de la librería -->
+        <xs:element name="libro" type="tipoLibro" maxOccurs="unbounded"/> <!-- Libros disponible y puede repetirse -->
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
