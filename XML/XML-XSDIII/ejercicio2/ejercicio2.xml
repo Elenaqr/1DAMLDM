@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 20/04/2025
+Ejercicio: Longitud mínima y máxima de una clave
+-->
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio2.xsd">
+    <ficha>
+        <nombre>Ana Sanz Tin</nombre>
+        <clave>G8w2</clave>
+    </ficha>
+    <ficha>
+        <nombre>Iker Rubio Mol</nombre>
+        <clave>ag32Ue7AFF</clave>
+    </ficha>
+</fichas>

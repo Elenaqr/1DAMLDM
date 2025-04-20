@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 20/04/2025
+Ejercicio: Información de ubicaciones
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ubicaciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ubicacion" type="infoUbicacion" maxOccurs="unbounded"/> <!-- Cambiado de tipo "direccion" a "infoUbicacion" -->
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="direccion"> 
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="norte"/>
+            <xs:enumeration value="sur"/>
+            <xs:enumeration value="este"/>
+            <xs:enumeration value="oeste"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="infoUbicacion"> 
+        <xs:simpleContent>
+            <xs:extension base="direccion">
+                <xs:attribute name="metros" type="xs:integer"/> <!-- Añade el atributo metros -->
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

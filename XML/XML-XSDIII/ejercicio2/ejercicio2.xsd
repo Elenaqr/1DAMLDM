@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 20/04/2025
+Ejercicio: Longitud mínima y máxima de una clave
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fichas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ficha" maxOccurs="unbounded"> <!-- Permite múltiples fichas -->
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="clave">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z0-9]+"/> <!-- Solo letras y números -->
+                                        <xs:minLength value="4"/> <!-- Mínimo 4 caracteres -->
+                                        <xs:maxLength value="10"/> <!-- Máximo 10 caracteres -->
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

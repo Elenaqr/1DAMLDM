@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 20/04/2025
+Ejercicio: Información de ubicaciones
+-->
+<ubicaciones xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance" xsi:noNamespaceSchemaLocation="ejercicio4.xsd">
+    <ubicacion metros="32">norte</ubicacion>
+    <ubicacion metros="25">este</ubicacion>
+    <ubicacion metros="64">este</ubicacion>
+</ubicaciones>
