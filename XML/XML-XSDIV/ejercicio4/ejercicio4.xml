@@ -5,7 +5,7 @@ Curso: 1ºDAM
 Fecha: 19/04/2025
 Ejercicio: Heladeria 2
 -->
-<heladeria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Heladeria2.xsd">
+<heladeria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio4.xsd">
   <helado>
     <fresa />
     <chocolate />

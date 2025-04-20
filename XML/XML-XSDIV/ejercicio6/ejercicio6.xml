@@ -5,7 +5,7 @@ Curso: 1ºDAM
 Fecha: 19/04/2025
 Ejercicio: Libreria
 -->
-<libreria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Libreria.xsd">
+<libreria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio6.xsd">
   <codigo>1263</codigo>
   <direccion>Juan de Juni, 31</direccion>
   <telefono>983555555</telefono>

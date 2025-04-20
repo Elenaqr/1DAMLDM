@@ -5,7 +5,7 @@ Curso: 1ºDAM
 Fecha: 19/04/2025
 Ejercicio: Alumnos 2
 -->
-<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Alumnos2.xsd">
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio2.xsd">
  <alumno dni="11111111A">
    <nombre>Juan Andrés</nombre>
    <direccion>

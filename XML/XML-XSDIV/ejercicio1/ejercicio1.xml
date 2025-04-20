@@ -5,7 +5,7 @@ Curso: 1ºDAM
 Fecha: 19/04/2025
 Ejercicio: Alumnos 1
 -->
-<alumno dni="12345678A" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Alumnos1.xsd">
+<alumno dni="12345678A" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
     <nombre>Juan Garcia</nombre>
     <direccion>
         <calle>Avenida de la Fuente</calle>

@@ -5,7 +5,7 @@ Curso: 1ºDAM
 Fecha: 19/04/2025
 Ejercicio: Faq
 -->
-<faq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Faq.xsd">
+<faq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio5.xsd">
   <info>
     <titulo>WINDOWS98? SOLO SI ME OBLIGAN!</titulo>
     <autor>Fernando Damián Lorenzo García</autor>
