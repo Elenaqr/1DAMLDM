@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 20/04/2025
+Ejercicio: Respuestas admitidas
+-->
+<xs:element name="respuesta"> <!-- Solución 1: Usando xs:pattern con intervalo de caracteres -->
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-E]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="respuesta"> <!-- Solución 2: Usando xs:pattern con caracteres separados por | -->
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="A|B|C|D|E"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="respuesta"> <!-- Solución 3: Sin usar xs:pattern, usando xs:enumeration -->
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A"/>
+      <xs:enumeration value="B"/>
+      <xs:enumeration value="C"/>
+      <xs:enumeration value="D"/>
+      <xs:enumeration value="E"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>

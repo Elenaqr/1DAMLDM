@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 20/04/2025
+Ejercicio: Números y letras
+-->
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="fichas.xsd">
+    <ficha numero="01" letra="Z">
+        <codigo>11</codigo>
+        <nombre>Ana Sanz Tin</nombre>
+    </ficha>
+    <ficha numero="02">
+        <codigo>12</codigo>
+        <nombre>Iker Rubio Mol</nombre>
+    </ficha>
+</fichas>

@@ -1,0 +1,45 @@
+<!-- 
+Nombre: Elena Qin Real Zhang
+Curso: 1ºDAM 
+Fecha: 20/04/2025
+Ejercicio: Escribir expresiones regulares
+-->
+
+<!-- 1. "Capítulo 0", "Capítulo 1", "Capítulo 2"... "Capítulo 9". (Solo se permite un dígito) -->
+<xs:pattern value="Capítulo [0-9]"/> <!-- Solución 1 -->
+<xs:pattern value="Capítulo \d"/> <!-- Solución 2 -->
+
+<!-- 2. "Capítulo 0", "Capítulo 1", "Capítulo 2"... "Capítulo 99". (Uno o dos dígitos) -->
+<xs:pattern value="Capítulo \d{1,2}"/> <!-- Solución 1 -->
+<xs:pattern value="Capítulo [0-9]{1,2}"/> <!-- Solución 2 -->
+<xs:pattern value="Capítulo \d|\d\d"/> <!-- Solución 3 -->
+
+<!-- 3. "Capítulo 1", "Capítulo 2", "Capítulo 3"... "Capítulo 99". (No se permite "Capítulo 0") -->
+<xs:pattern value="Capítulo [1-9]|\d\d"/> <!-- Solución 1 -->
+<xs:pattern value="Capítulo [1-9]|[1-9]\d"/> <!-- Solución 2 -->
+<xs:pattern value="Capítulo [1-9]{1}|\d{2}"/> <!-- Solución 3 -->
+
+<!-- 4. "Capítulo 0", "Capítulo 1", "Capítulo 2"... "Capítulo 99"... "Capítulo 100"... (Uno o más dígitos) -->
+<xs:pattern value="Capítulo \d+"/> <!-- Solución 1 -->
+<xs:pattern value="Capítulo [0-9]+"/> <!-- Solución 2 -->
+<xs:pattern value="Capítulo \d{1,}"/> <!-- Solución 3 -->
+
+<!-- 5. Cualquier valor de dos caracteres, cuyo primer carácter sea distinto de un dígito (0-9) y cuyo segundo carácter sea "Z" -->
+<xs:pattern value="\D[Z]"/> <!-- Solución 1 -->
+<xs:pattern value="[^\d]Z"/> <!-- Solución 2 -->
+<xs:pattern value="[^0-9]Z"/> <!-- Solución 3 -->
+
+<!-- 6. "ABBC", "ABBBC", "ABBBBC", "ABBBBBC" -->
+<xs:pattern value="AB{2,5}C"/> <!-- Solución 1 -->
+<xs:pattern value="ABB+C"/> <!-- Solución 2 -->
+<xs:pattern value="AB{2}|B{3}|B{4}|B{5}C"/> <!-- Solución 3 -->
+
+<!-- 7. "RSS", "RSSS"... "RSS3"... "RSS8", "RSSS3"... "RSSS8"... "RSSSSSSSSSSS7"... -->
+<xs:pattern value="RS{2,}[3-8]?"/> <!-- Solución 1 -->
+<xs:pattern value="RS{2,}|RS{2,}[3-8]"/> <!-- Solución 2 -->
+<xs:pattern value="RS{2,}([3-8])?"/> <!-- Solución 3 -->
+
+<!-- 8. "COD645pera", "COD646manzana"... -->
+<xs:pattern value="COD\d{3}.+"/><!-- Solución 1 -->
+<xs:pattern value="COD[0-9]{3}.+"/><!-- Solución 2 -->
+<xs:pattern value="COD\d\d\d.{1,}"/><!-- Solución 3 -->
