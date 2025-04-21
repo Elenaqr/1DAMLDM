@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 21/04/2025
+Ejercicio: Ejercicio 3
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="precios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="precio" maxOccurs="unbounded">
+                    <xs:simpleType> <!-- Restricción para este elemento -->
+                        <xs:restriction base="xs:decimal">
+                            <xs:totalDigits value="3"/> <!-- Máximo 3 dígitos en total -->
+                            <xs:fractionDigits value="2"/> <!-- Máximo 2 dígitos decimales -->
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

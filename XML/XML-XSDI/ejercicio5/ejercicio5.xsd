@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Elena Qin Real Zhang
+Curso: 1DAM
+Fecha: 21/04/2025
+Ejercicio: Ejercicio 5
+-->
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio5.xsd">
+    <ficha>
+        <nombre>Antonio Machado Ruiz</nombre>
+        <iniciales>AMR</iniciales> 
+        <edad>22</edad>
+    </ficha>
+    <ficha>
+        <nombre>Mario Moreno</nombre>
+        <iniciales>MMO</iniciales> <!-- Corregido: se requieren 3 letras mayúsculas -->
+        <edad>23</edad>
+    </ficha>
+    <ficha>
+        <nombre>Ada Lovelace</nombre> <!-- Corregido: orden de los elementos -->
+        <iniciales>ALO</iniciales>
+        <edad>24</edad>
+    </ficha>
+    <ficha>
+        <nombre>Pablo Ruiz Picasso</nombre> <!-- Corregido: nombre con mayúsculas -->
+        <iniciales>PRP</iniciales> <!-- Corregido: iniciales en mayúsculas -->
+        <edad>24</edad>
+    </ficha>
+</fichas>
